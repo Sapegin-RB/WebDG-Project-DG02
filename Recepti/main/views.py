@@ -8,7 +8,7 @@ def new(request):
     return render(request, 'main/new.html')
 
 def data(request):
-    return HttpResponse("<h1>Это страница моего проекта на Django c файлами<h1>")
+    return render(request, 'main/data.html')
 
 def test(request):
-    return HttpResponse("<h1>Это страница моего проекта на Django c тестами<h1>")
+    return render(request, 'main/test.html')

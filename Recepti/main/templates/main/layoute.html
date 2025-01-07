@@ -24,8 +24,10 @@
                     <img src="{% static 'main/img/1.png' %}" alt="летящий попугай" class="img-fluid">
                     <span>ParrotDjango</span>
                     <ul>
-                        <li><a href="">Главная</a></li>
-                        <li><a href="">Второстепенная</a></li>
+                        <li><a href="{% url 'home' %}">Главная</a></li>
+                        <li><a href="{% url 'page2' %}">Статьи и советы</a></li>
+                        <li><a href="{% url 'page3' %}">Рецепты</a></li>
+                        <li><a href="{% url 'page4' %}">Косметика</a></li>
                     </ul>
                 </aside>
             </div>
