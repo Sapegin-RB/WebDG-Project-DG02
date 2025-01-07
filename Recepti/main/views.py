@@ -2,10 +2,10 @@ from django.shortcuts import render
 from django.http import HttpResponse
 # Create your views here.
 def index(request):
-    return HttpResponse("<h1>Это мой первый проект на Django<h1>")
+    return render(request, 'main/index.html')
 
 def new(request):
-    return HttpResponse("<h1>Это вторая страница моего проекта на Django<h1>")
+    return render(request, 'main/new.html')
 
 def data(request):
     return HttpResponse("<h1>Это страница моего проекта на Django c файлами<h1>")
